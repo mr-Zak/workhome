@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="src/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function say() {
+				$('.call').on('mouseover', function(){
+					$(this).css('background','red');
+				});	
+				$('.call').on('mouseout', function(){
+					$(this).css('background','yellow');
+				});
+				
+				$('.call').on('click', function() {
+					$('.basket').css('display', 'block');
+					alert('Товар добавлен в корзину');
+				});
+			});
+			
+		</script>
+		<link type="text/css" href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1 id="title">Товары</h1>
+		<section class="box">
+			<div class="minibox">
+				<h3 class="subtitle">Товар 1</h3>
+				<p class="info">описание</p>
+				<button class="call">Купить</button>
+			</div>
+			<div class="minibox">
+				<h3 class="subtitle">Товар 2</h3>
+				<p class="info">описание</p>
+				<button class="call">Купить</button>
+			</div>
+			<div class="minibox">
+				<h3 class="subtitle">Товар 3</h3>
+				<p class="info">описание</p>
+				<button class="call">Купить</button>
+			</div>
+		</section>
+		
+		<div class="basket">
+			<p class="product">Товары в корзине:  </p>
+		</div>
+	</body>
+</html>

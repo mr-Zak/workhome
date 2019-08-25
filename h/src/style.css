@@ -1,0 +1,36 @@
+h1 {
+	text-align: center;
+	margin-top: 100px;
+}
+.box {
+	display: flex;
+	justify-content: space-around;
+}
+.minibox {
+	height: 200px;
+	width: 200px;
+	border: solid 1px black;
+	text-align: center;
+	position: relative;
+}
+.subtitle {
+	margin-top: 0px;
+	margin-bottom: 55px;
+}
+.info {
+	margin-bottom: 120px;
+}
+.call {
+	position: absolute;
+	right: 0%;
+	padding: 15px 25px;
+	background: yellow;
+	border-radius: 15px; 
+}
+.basket {
+	position: fixed;
+	display: none;
+	border: solid 2px red;
+	right: 0%;
+	top: 0%;
+}
