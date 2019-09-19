@@ -104,6 +104,7 @@ function move() {
         clearInterval(interval);
         field.style.background = 'url(img/drich.jpg) center no-repeat';
         mouse.classList.remove('mouse');
+        head.classList.remove('head');
        
 
     }
